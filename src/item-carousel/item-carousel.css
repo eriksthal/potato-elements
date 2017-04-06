@@ -1,0 +1,25 @@
+.item-carousel__carousel-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-carousel__thumbnail-container {
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.item-carousel__thumbnail {
+    width: 50px;
+}
+
+.item-carousel__image-container {
+    display: flex;
+    height: 200px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.item-carousel__image {
+    width: 150px;
+}
