@@ -1,0 +1,20 @@
+.picture-frame__frame {
+    border: solid 10px #222;
+    padding: 13px;
+    box-shadow: 0px 17px 5px -9px #999;
+}
+
+.picture-frame__frame img {
+    width:100%;
+}
+
+.picture-frame__frame-container {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

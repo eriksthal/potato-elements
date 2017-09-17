@@ -1,0 +1,24 @@
+{
+   "element": "NavigationBar",
+   "properties": [
+      {"backgroundColor": "#fff"},
+      {"itemsColor": "#666"},
+      {"borderBottomColor": "#bbb"},
+      {"menuItems": [
+         {
+            "text": "Home",
+            "url": "#"
+         },
+         {
+            "text": "About",
+            "url": "#"
+         },
+         {
+            "text": "Contact",
+            "url": "#"
+         }
+      ]},
+      {"itemsAlign": "flex-end"}
+   ],
+   "hidden": false
+}

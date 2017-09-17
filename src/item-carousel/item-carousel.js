@@ -10,15 +10,15 @@ class ItemCarousel extends Component {
 
     _swapImage(event) {
         if(event && event.target) {
-            console.log(event.target);
             this.setState({selectedImage: event.target.src});
-            console.log(this.state.selectedImage);
+            event.target.classList.add('item-carousel__thumbnail-highlighted');
         }
 
     }
+
     _renderThumbs() {
-        return this.props.images.map((image) =>
-            <img onClick={this._swapImage.bind(this)} className="item-carousel__thumbnail" src={image.image} alt={image.alt} />
+        return this.props.images.map((image, index) =>
+            <img key={index} onMouseOver={this._swapImage.bind(this)} className="item-carousel__thumbnail" src={image.image} alt={image.alt} />
         );
     }
   render() {

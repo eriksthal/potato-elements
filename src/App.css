@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300|Roboto+Slab:100,300');
+
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 .App {
@@ -26,6 +29,15 @@ body {
 }
 .App-intro {
   font-size: large;
+}
+
+.App__heading {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 200;
+  color: #444;
+  text-transform: uppercase;
 }
 
 @keyframes App-logo-spin {

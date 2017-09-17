@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './item-showcase.css';
 import ItemCarousel from '../item-carousel/item-carousel';
+import ItemAddToCart from '../item-add-to-cart/item-add-to-cart';
 
 class ItemShowcase extends Component {
 
     _renderFeatures() {
-        return this.props.features.map((feature) =>
-            <li>{feature.feature}</li>
+        return this.props.features.map((feature, index) =>
+            <li key={ index }>{ feature.feature }</li>
         );
     }
   render() {
@@ -20,12 +21,10 @@ class ItemShowcase extends Component {
                 </div>
                 <div className="item-showcase__description-container">
                     { this.props.description }
-                    <ul>
+                    <ul className="item-showcase__features-list">
                         { this._renderFeatures() }
                     </ul>
-                    <div className="item-showcase__price-container">
-                        <p className="item-showcase__price">${this.props.price}</p><button className="item-showcase__add-to-cart-button">Add to cart</button>
-                    </div>
+                    <ItemAddToCart price="12.40" addToCartText="Add to cart" wishListText="Add to wishlist"></ItemAddToCart>
                 </div>
             </div>
         </div>
